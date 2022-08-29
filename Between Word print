@@ -1,0 +1,13 @@
+# Write your substring_between_letters function here:
+def substring_between_letters(word, start, end):
+  try:
+    first = word.index(start)
+    last = word.index(end)
+    return word[first+1:last]
+  except ValueError:
+    return "None Found"
+# Uncomment these function calls to test your function:
+print(substring_between_letters("appppleele", "p", "e"))
+# should print "pl"
+print(substring_between_letters("apple", "p", "c"))
+# should print "apple"
